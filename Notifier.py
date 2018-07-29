@@ -1,6 +1,7 @@
 import requests
 from discord_hooks import Webhook
 from twilio.rest import TwilioRestClient
+import time
 
 # SET YOUR TWILIO PHONE NUMBER. GET ONE AT https://www.twilio.com/try-twilio
 # Format it with +1#######
@@ -48,7 +49,7 @@ while (isPassword):
     if ('password' in response.url):
         print('Not Live')
         print (response.url)
-        time.sleep(5)
+        time.sleep(5) #Refresh delay
     else:
         call(Target_number)
         sendMessage(embed)
