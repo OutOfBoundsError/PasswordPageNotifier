@@ -13,6 +13,7 @@ Notifies the user whenever the password page of a site is gone and the site is o
 
 - Twilio (Install by running pip install twilio==5.7.0 in command prompt)
 
-- requests
+- Requests 
 
+- Time
 
