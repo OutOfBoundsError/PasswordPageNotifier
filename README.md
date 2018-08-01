@@ -1,5 +1,5 @@
 # PasswordPageNotifier
-Notifies the user whenever the password page of a site is gone and the site is officially live. 
+Simple notifier that tells the user whenever a password page has been unlocked by the admin. 
 
 
 # Functions
