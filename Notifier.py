@@ -27,10 +27,10 @@ def call(target):
 
 def sendMessage(bot):
     bot.set_author(name='Password Monitor')
-    bot.set_desc('ToyTokyo is Live!!!!')
+    bot.set_desc('YeezySupply is Live!!!!')
     #Set value below to the link of your desired page without password
     #Example: if your desired page is https://yeezysupply.com/password then you would enter https://yeezysupply.com
-    bot.add_field(name='Link: ', value='https://launch.toytokyo.com')
+    bot.add_field(name='Link: ', value='https://yeezysupply.com/')
     bot.set_footer(ts=True)
     bot.post()
 
@@ -45,7 +45,7 @@ isPassword = True
 #sendMessage(embed)
 
 while (isPassword):
-    response = req.get('https://launch.toytokyo.com/')
+    response = req.get('https://yeezysupply.com/')
     if ('password' in response.url):
         print('Not Live')
         print (response.url)
